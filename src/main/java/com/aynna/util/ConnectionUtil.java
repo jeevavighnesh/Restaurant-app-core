@@ -12,7 +12,7 @@ public class ConnectionUtil {
 		ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		ds.setUsername("dev_user");
 		ds.setPassword("dev_pwd");
-		ds.setUrl("jdrbc:mysql:/139.59.29.57/:3306/vighnesh_db");
+		ds.setUrl("jdbc:mysql://139.59.29.57:3306/vighnesh_db");
 		return ds;
 	}
 

@@ -6,9 +6,16 @@ import com.aynna.model.Configuration;
 
 public class TestConfigurationDAO {
 	public static void main(String[] args) {
-		//Configuration config = new Configuration();
+		Configuration config = new Configuration();
+		config.setId(1);
+		// config.setItemLimit(5);
+		// config.setNumberOfSeats(10);
 
 		ConfigurationDAO configdao = new ConfigurationDAO();
+		// configdao.save(config);
+		// configdao.delete(2);
+		// configdao.updateItemLimit(config);
+		// configdao.updateNumberOfSeats(config);
 		List<Configuration> configlist = configdao.list();
 
 		for (Configuration c : configlist) {
@@ -16,5 +23,4 @@ public class TestConfigurationDAO {
 		}
 
 	}
-	
 }

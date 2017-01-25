@@ -12,14 +12,14 @@ import com.aynna.util.ConnectionUtil;
 public class ConfigurationDAO {
 	JdbcTemplate jdbcTemplate = ConnectionUtil.getJdbcTemplate();
 
-//	public void save(Configuration config) {
-//
-//		String sql = "insert into CONFIGURATION(ID,ITEMLIMIT,NUMBEROFSEATS) values(?,?,?)";
-//		Object[] params = { config.getId(), config.getItemLimit(), config.getNumberOfSeats() };
-//		int rows = jdbcTemplate.update(sql, params);
-//		System.out.println("No of rows inserted: " + rows);
-//
-//	}
+	public void save(Configuration config) {
+
+		String sql = "insert into CONFIGURATION(ID,ITEMLIMIT,NUMBEROFSEATS) values(?,?,?)";
+		Object[] params = { config.getId(), config.getItemLimit(), config.getNumberOfSeats() };
+		int rows = jdbcTemplate.update(sql, params);
+		System.out.println("No of rows inserted: " + rows);
+
+	}
 
 	public void updateItemLimit(Configuration config) {
 
