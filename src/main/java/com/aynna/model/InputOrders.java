@@ -4,6 +4,8 @@ import lombok.Data;
 
 @Data
 public class InputOrders {//INPUTORDERS
-	int id, foodName, quantity,seatId;
+	int id, quantity;
+	String foodName;
+	Seat seat;
 	boolean valid;
 }

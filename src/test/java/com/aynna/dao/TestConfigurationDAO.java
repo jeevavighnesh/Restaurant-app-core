@@ -6,8 +6,8 @@ import com.aynna.model.Configuration;
 
 public class TestConfigurationDAO {
 	public static void main(String[] args) {
-		Configuration config = new Configuration();
-		config.setId(1);
+		// Configuration config = new Configuration();
+		// config.setId(1);
 		// config.setItemLimit(5);
 		// config.setNumberOfSeats(10);
 
