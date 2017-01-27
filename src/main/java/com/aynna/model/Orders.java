@@ -1,12 +1,14 @@
 package com.aynna.model;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 import lombok.Data;
 
 @Data
 public class Orders {//ORDERS
-	int id, numberOfItems, seatId;
+	int id;
+	int numberOfItems;
+	Seat seat;
 	boolean orderStatus;
-	Timestamp timeAndDate;
+	LocalDateTime timeAndDate;
 }

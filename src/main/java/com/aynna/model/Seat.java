@@ -4,5 +4,6 @@ import lombok.Data;
 
 @Data
 public class Seat {//SEAT
-	int id, statusId, concurrency;
+	int id, concurrency;
+	SeatStatus seatStatus;
 }
