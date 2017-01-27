@@ -1,6 +1,6 @@
 package com.aynna.model;
 
-import java.sql.Time;
+import java.time.LocalTime;
 
 import lombok.Data;
 
@@ -8,6 +8,6 @@ import lombok.Data;
 public class Session {// TYPEOFFOOD
 	int id;
 	String name;
-	Time start;
-	Time end;
+	LocalTime start;
+	LocalTime end;
 }
