@@ -11,10 +11,8 @@ public class TestOrdersDAO {
 	public static void main(String[] args) {
 		// Orders orders = new Orders();
 		// Seat seat = new Seat();
-		// LocalDateTime localdatetime = LocalDateTime.now();
-		// String sqltimestampformat =
-		// localdatetime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd
-		// HH:MM:ss"));// Using
+		LocalDateTime localdatetime = LocalDateTime.now();
+		String sqltimestampformat = localdatetime.format(DateTimeFormatter.ofPattern("uuuu-MM-dd HH:MM:ss"));// Using
 		// this
 		// for
 		// now
@@ -25,11 +23,9 @@ public class TestOrdersDAO {
 		// parsing
 		// a
 		// bit
-		// DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd
-		// HH:MM:ss");
-		// LocalDateTime sqltimestamp = LocalDateTime.parse(sqltimestampformat,
-		// formatter);
-		// System.out.println(sqltimestamp);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("uuuu-MM-dd HH:MM:ss");
+		LocalDateTime sqltimestamp = LocalDateTime.parse(sqltimestampformat, formatter);
+		System.out.println(sqltimestamp);
 		// seat.setId(6);
 		// orders.setId(15);
 		// orders.setNumberOfItems(5);
@@ -38,7 +34,7 @@ public class TestOrdersDAO {
 		// change variable name here
 		//
 
-		OrdersDAO ordersDAO = new OrdersDAO();
+//		OrdersDAO ordersDAO = new OrdersDAO();
 
 		// ordersDAO.save(orders);
 		// ordersDAO.delete(15);
@@ -46,11 +42,11 @@ public class TestOrdersDAO {
 		// ordersDAO.updateOrdersStatus(orders);
 		// ordersDAO.updateSeatId(orders);
 		// ordersDAO.updateTimeAndDate(orders);
-		List<Orders> configlist = ordersDAO.list();
-
-		for (Orders c : configlist) {
-			System.out.println(c);
-		}
+////		List<Orders> configlist = ordersDAO.list();
+////
+////		for (Orders c : configlist) {
+////			System.out.println(c);
+//		}
 
 	}
 }
