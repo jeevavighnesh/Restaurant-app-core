@@ -13,7 +13,7 @@ public class TestFoodDAO {
 
 		FoodDAO fooddao = new FoodDAO();
 		// fooddao.save(food);
-		 fooddao.delete(15);
+		// fooddao.delete(15);
 		// fooddao.updateName(food);
 		// fooddao.updatePrice(food);
 		List<Food> configlist = fooddao.list();
