@@ -66,4 +66,17 @@ public class FoodDAO {
 		food.setPrice(rs.getInt("PRICE"));
 		return food;
 	}
+
+	public List<String> findFoodNames() {
+		String sql = "SELECT FOODNAME FROM FOOD";
+		List<String> foodNameList = jdbcTemplate.queryForList(sql, String.class);
+		return foodNameList;
+	}
+	
+	public List<Integer> findFoodId() {
+		String sql = "SELECT ID FROM FOOD";
+		List<Integer> foodIdList = jdbcTemplate.queryForList(sql, Integer.class);
+		return foodIdList;
+	}
+	
 }

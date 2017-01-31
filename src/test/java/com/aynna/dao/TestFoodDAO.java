@@ -16,11 +16,23 @@ public class TestFoodDAO {
 		// fooddao.delete(15);
 		// fooddao.updateName(food);
 		// fooddao.updatePrice(food);
-		List<Food> configlist = fooddao.list();
+		List<Food> foodList = fooddao.list();
 
-		for (Food c : configlist) {
+		for (Food c : foodList) {
 			System.out.println(c);
 		}
+		
+		// List<Integer> foodIdList = fooddao.findFoodId();
+		//
+		// for (Integer c : foodIdList) {
+		// System.out.println(c);
+		// }
+		//
+		// List<String> foodNameList = fooddao.findFoodNames();
+		//
+		// for (String c : foodNameList) {
+		// System.out.println(c);
+		// }
 
 	}
 }
