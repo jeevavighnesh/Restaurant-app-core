@@ -48,7 +48,7 @@ public class FoodDAO {
 
 	}
 
-	public List<Food> list() {// Select All
+	public List<Food> list() 																																														{// Select All
 
 		String sql = "select Id,FOODNAME,PRICE from FOOD";
 		List<Food> list = jdbcTemplate.query(sql, (rs, rowNum) -> {
